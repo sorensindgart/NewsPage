@@ -1,0 +1,478 @@
+﻿body {
+    background-color: #ecf0f1;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+#top-bar {
+    width: 100%;
+    height: 2vh;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#top-bar li {
+    list-style: none;
+    margin-right: 12px;
+}
+
+#top-bar li a {
+    color: #6e6e6e;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: monospace, sans-serif;
+    font-weight: 100;
+}
+
+.top-bar-logout {
+    color: #6e6e6e;
+    border: none;
+    background-color: #ecf0f1;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: monospace, sans-serif;
+    font-weight: 100;
+}
+
+#top-bar li a:hover, .top-bar-logout:hover {
+    background-color: #383838;
+    color: #aeaeae;
+    cursor: pointer;
+}
+
+#top-bar li i {
+    color: #6e6e6e;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+.login-name {
+    background-color: #383838;
+    color: #ecf0f1;
+    text-transform: uppercase;
+    font-size: 12px;
+
+}
+
+header {
+    width: 100%;
+    background-color: #e74c3c;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ecf0f1;
+    font-size: 2em;
+    text-transform: lowercase;
+    font-family: monospace, sans-serif;
+    font-weight: 100;
+}
+
+.logo span {
+    background-color: #383838;
+/*    position: absolute;
+    transform:rotate(-3deg);*/
+}
+
+nav {
+    width: 100%;
+    height: 4vh;
+}
+
+nav ul {
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li a, #footer-nav ul li a, #footer-socialmedia ul li a, .plaintext, .plaintext a {
+    color: #ecf0f1;
+    padding: 0px 5px 0 5px;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: monospace, sans-serif;
+    font-weight: 100;
+}
+
+nav ul li a:hover, #footer-nav ul li a:hover, #footer-socialmedia ul li a:hover, .plaintext a:hover {
+    background-color: #383838;
+}
+
+#content {
+    margin-top: 2%;
+    margin-bottom: 10vh;
+}
+
+footer {
+    width: 100%;
+    height: 15vh;
+    background-color: #e74c3c;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+#footer-nav {
+    margin-top: 1vh;
+    display: inline-block;
+}
+
+#footer-kontakt {
+    margin-top: 1vh;
+    display: inline-block;
+}
+
+#footer-socialmedia {
+    margin-top: 1vh;
+    display:inline-block;
+}
+
+.side-overskrifter {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: monospace, sans-serif;
+
+}
+
+/* FORSIDEN */
+
+#forside-nyhed {
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 20px;
+    width: 500px;
+    display: block;
+}
+
+ #vidstedu {
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 20px;
+    width: 500px;
+    display: block;
+}
+
+#forside-nyhed:hover, #vidstedu:hover, #nyhed-box:hover {
+    background-color: #e74c3c;
+}
+
+#vidstedu h2 {
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: none;
+    color: #6e6e6e;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: monospace, sans-serif;
+}
+
+#vidstedu h2:hover {
+    background-color: #383838;
+    color: #ecf0f1;
+    cursor: default;
+}
+
+#vidstedu p {
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: none;
+    color: #6e6e6e;
+    font-size: 1em;
+    font-family: monospace, sans-serif;
+
+}
+
+#forside-nyhed img {
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+#forside-nyhed-datooverskrift {
+    text-align: center;
+
+}
+
+#forside-nyhed-datooverskrift a {
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: none;
+    color: #6e6e6e;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: monospace, sans-serif;
+}
+
+#forside-nyhed-datooverskrift a:hover {
+    background-color: #383838;
+    color: #ecf0f1;
+    text-decoration: underline;
+}
+
+#forside-nyhed-datooverskrift p {
+    font-style: italic;
+    font-size: 0.8em;
+    font-family: monospace, sans-serif;
+}
+
+.line {
+    background-color: black;
+    height: 1px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ALLE NYHEDER */
+
+#nyhed-box {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+#nyhed-imagedate {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+#nyhed-overskrift-teaser {
+    padding: 10px;
+}
+
+#nyhed-overskrift-teaser p {
+    font-style: italic;
+    font-size: 0.8em;
+    font-family: monospace, sans-serif;
+
+}
+
+#nyhed-overskrift-teaser h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: monospace, sans-serif;
+
+}
+
+#lasmere {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#lasmere a {
+    color: #6e6e6e;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#lasmere a:hover {
+    background-color: #383838;
+    color: #ecf0f1;
+}
+
+/* ADMIN NAV BAR */
+/* CSSTerm.com Simple Horizontal DropDown CSS menu */
+
+.drop_menu {
+	background: #e74c3c;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	height: 3vh;
+    width: 100%;
+    border-top: 1px solid #383838;
+    display: flex;
+    justify-content: space-around;
+}
+
+.drop_menu li { 
+    float:left;
+}
+
+.drop_menu li a {
+	padding: 9px 20px;
+	display: block;
+	color: #ecf0f1;
+	text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: monospace, sans-serif;
+
+}
+
+/* Submenu */
+
+.drop_menu ul {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+	list-style-type: none;
+}
+
+.drop_menu li:hover { 
+    position: relative; 
+    color: white; 
+    background-color: #383838;
+}
+
+.drop_menu li:hover ul {
+	left: 0px;
+	top: 30px;
+	padding: 0px;
+}
+
+.drop_menu li:hover ul li a {
+	padding: 5px;
+	display: block;
+	width: 168px;
+	text-indent: 15px;
+	background-color: #e74c3c;
+}
+
+.drop_menu li:hover ul li a:hover { 
+    background-color: #383838;
+}
+
+#ret-slet {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 10px 0 10px 0;
+    margin-left: 10%;
+    color: #ecf0f1;
+	text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: monospace, sans-serif;
+}
+
+#ret-slet:hover {
+    background-color: #e74c3c;
+    color: #ecf0f1;
+}
+
+#ret-slet a {
+    color: #383838;
+	text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: monospace, sans-serif;
+    margin-right: 15px;
+}
+
+#ret-slet a:hover {
+    color: white;
+}
+
+#ret i:hover {
+    color: white;
+}
+
+#slet i:hover {
+    color: white;
+}
+
+/* NYHEDSDETALJER */
+
+#ind-nyhed {
+    display: flex;
+}
+
+.ind-nyhed-img{
+    padding: 10px;
+}
+
+#ind-nyhed-style {
+    padding: 10px;
+    flex-direction:row;
+}
+
+.ind-nyhed-overskrift{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: monospace, sans-serif;
+
+}
+
+.ind-nyhed-dato{
+    font-weight: 100;
+    font-size: 0.8em;
+    font-family: monospace, sans-serif;
+}
+
+
+.ind-nyhed-tekst {
+    font-size: 1em;
+    font-family: monospace, sans-serif;
+    padding: 20px 0 20px 0;
+}
+
+/* LOGIN.ASPX */
+
+.div-login {
+    position: relative;
+    left: calc(50% - 150px);
+    display: inline-block;
+}
+
+.txt-login {
+    width: 300px;
+    height: 35px;
+    padding: 5px;
+    margin: 5px;
+    color: #e74c3c;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.txt-multiline {
+    width: 300px;
+    height: 150px;
+    padding: 5px;
+    margin: 5px;
+    color: #e74c3c;
+    border: 1px solid black;
+    resize: none;
+}
+
+.btn-login {
+    width: 312px;
+    height: 35px;
+    padding: 5px;
+    margin: 5px;
+    color: #e74c3c;
+    border: 1px solid black;
+    background-color: white;
+
+}

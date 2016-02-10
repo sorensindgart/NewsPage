@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <header>
+                <div id="top-bar">
+                    <li><a href="Login.aspx">Login<i class="fa fa-lock"></i></a></li>
+                </div>
+
+                <div class="logo">
+                    <h3><span>NewsSite</span></h3>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="Default.aspx">Forsiden</a></li>
+                        <li><a href="AlleNyheder.aspx">Alle Nyheder</a></li>
+                        <li><a href="Nyhedskategorier1.aspx">Vælg Nyhed Ud fra Kategori #1</a></li>
+                        <li><a href="Nyhedskategorier2.aspx">Vælg Nyhed Ud fra Kategori #2</a></li>
+                        <li><a href="Vidstedu.aspx">Vidste Du At ...</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            </div>
+
+            <footer>
+                <div id="footer-nav">
+                    <ul>
+                        <li><a href="Default.aspx">Forsiden</a></li>
+                        <li><a href="AlleNyheder.aspx">Alle Nyheder</a></li>
+                        <li><a href="Nyhedskategorier1.aspx">Vælg Nyhed Ud fra Kategori #1</a></li>
+                        <li><a href="Nyhedskategorier2.aspx">Vælg Nyhed Ud fra Kategori #2</a></li>
+                        <li><a href="Vidstedu.aspx">Vidste Du At ...</a></li>
+                    </ul>
+                </div>
+
+                <div id="footer-kontakt">
+                    <asp:Literal ID="litKontakt" runat="server" />
+                </div>
+
+                <div id="footer-socialmedia">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa fa-rss-square"></i> RSS</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

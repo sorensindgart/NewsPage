@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="admin_AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Dr+Sugiyama" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <header>
+                <div id="top-bar">
+                    <li class="login-name"><asp:Literal ID="litUser" runat="server" /></li>
+                    <li><asp:Button ID="btnLogout" runat="server" Text="logout" OnClick="btnLogout_Click" CssClass="top-bar-logout" /><i class="fa fa-lock"></i></li>
+                </div>
+
+                <div class="logo">
+                    <h3><span>NewsSite</span></h3>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="../Default.aspx">Forsiden</a></li>
+                        <li><a href="../AlleNyheder.aspx">Alle Nyheder</a></li>
+                        <li><a href="../Nyhedskategorier1.aspx">Vælg Nyhed Ud fra Kategori #1</a></li>
+                        <li><a href="../Nyhedskategorier2.aspx">Vælg Nyhed Ud fra Kategori #2</a></li>
+                        <li><a href="../Vidstedu.aspx">Vidste Du At ...</a></li>
+                    </ul>
+                </nav>
+
+                <div id="adminbar">
+                    <ul class="drop_menu">
+                        <li><a href="Default.aspx">Admin.Default</a></li>
+                        <li><a href="#">Admin.Nyhed</a>
+                            <ul>
+                                <li><a href="NyhedOpret.aspx">Opret</a></li>
+                                <li><a href="NyhedRetSlet.aspx">Ret\Slet</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Admin.Vidste Du</a>
+                            <ul>
+                                <li><a href="VidsteDuOpret.aspx">Opret</a></li>
+                                <li><a href="VidsteDuRetSlet.aspx">Ret\Slet</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Admin.Kontakt</a>
+                            <ul>
+                                <li><a href="KontaktRetRet.aspx">Ret</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </header>
+
+            <div id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>
